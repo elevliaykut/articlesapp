@@ -32706,7 +32706,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h2", [_vm._v("ArticlesASASAS")])])
+    return _c("div", [_c("h2", [_vm._v("Articles")])])
   }
 ]
 render._withStripped = true
@@ -44893,12 +44893,9 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('articles', __webpack_require__(/*! ./components/Articles.vue */ "./resources/assets/js/components/Articles.vue"));
+Vue.component('articles', __webpack_require__(/*! ./components/Articles.vue */ "./resources/assets/js/components/Articles.vue")["default"]);
 new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Worldsdsd'
-  }
+  el: '#app'
 });
 
 /***/ }),

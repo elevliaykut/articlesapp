@@ -11,15 +11,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <div id="app">
-        <div class="container">
             <articles></articles>
-        </div>
     </div>
-    
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
-
 </html>
