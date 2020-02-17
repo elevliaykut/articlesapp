@@ -11,6 +11,8 @@
         <div class="card card-body mb-2" v-for="article in articles" v-bind:key="article.id">
             <h3>{{ article.title }}</h3>
             <p>{{ article.body }}</p>
+            <hr>
+            <button @click="deleteArticle(article.id)" class="btn btn-danger">Delete</button>
         </div>
     </div>
 </template>
@@ -53,6 +55,19 @@
                     prev_page_url: links.pev,
                 }
                 this.pagination = pagination;
+            },
+            deleteArticle(id){
+                if(confirm('Are you sure')) {
+                    fetch(`api/article/${id}`, {
+                        method:'delete'
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        alert('Article Removed');
+                        this.fetchArticles();
+                    })
+                    .catch(err => console.log(err));
+                }
             }
         }
     }
