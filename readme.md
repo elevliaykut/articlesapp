@@ -50,4 +50,12 @@ Technologies used;
 
 - After setting the environment, run the build.sh
 
+- Install package manager to Vue.js
+
+        npm install
+
+        npm run watch
+
+and you're all done! You have startted the server on http://127.0.0.1:3000/
+
 <hr></hr>
