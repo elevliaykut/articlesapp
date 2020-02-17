@@ -62,9 +62,11 @@ and you're all done! You have startted the server on http://127.0.0.1:3000/
 
 ### Sending Request
 
-You can sent POST request usiing Postman.
+You can sent request usiing Postman.
 
 #### Articles Details
+
+Request
 
 <table>
     <thead>
@@ -76,7 +78,7 @@ You can sent POST request usiing Postman.
     <tbody>
         <tr>
             <td>GET</td>
-            <td>/articles</td>
+            <td>api/articles</td>
         </tr>
     </tbody>
   </table>
@@ -130,5 +132,119 @@ Using pagination to list just five data.
         }
     }
 
+<hr></hr>
+
+#### Get Details Of Articles by id
+
+Return the list of details with id given.
+
+Request
+
+<table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GET</td>
+            <td>api/article/3</td>
+        </tr>
+    </tbody>
+  </table>
+
+Response
+
+        {
+            "data": {
+                "id": 3,
+                "title": "Odio et eos ea soluta eum.",
+                "body": "Ut non facilis aperiam quia. Nam est vero reiciendis facere asperiores ipsam consequatur. Minus eius ut ipsum sit."
+            },
+            "version": "1.0.0",
+            "author_url": "http://aykutelevli.me"
+        }
+
+<hr></hr>
+
+#### Create New Article
+
+Request
+
+<table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>POST</td>
+            <td>/article</td>
+        </tr>
+    </tbody>
+  </table>
+
+Response
+
+    {
+        "data": {
+            "id": 16,
+            "title": "New Title",
+                "body": "New Body"
+            },
+            "version": "1.0.0",
+            "author_url": "http://aykutelevli.me"
+    }
+
+<hr></hr>
+
+#### Update Article affairs by id
+
+Update artiicle given by id.
+
+Request
+
+    {
+        "data": {
+            "id": 3,
+            "title": "Update Title",
+            "body": "Update body"
+            },
+            "version": "1.0.0",
+            "author_url": "http://aykutelevli.me"
+    }
+
+<hr></hr>
+
+#### Delete Article affairs by id
+
+Delete article given by id.
+
+Request
+
+<table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Delete</td>
+            <td>article/3</td>
+        </tr>
+    </tbody>
+  </table>
+
+  Response
+
+         {
+                 null, 204
+         }
 
 <hr></hr>
