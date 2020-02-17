@@ -10,7 +10,7 @@ This is a sample REST API application uses laravel and Vue.js. It allows you POS
 
 Technologies used;
 
-✔️ Laravel 5.5.48 as framewaork
+✔️ Laravel 5.5.48 as framework
 
 ✔️ Composer for dependency management
 
@@ -205,6 +205,21 @@ Response
 #### Update Article affairs by id
 
 Update artiicle given by id.
+
+<table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>PUT</td>
+            <td>/article/id</td>
+        </tr>
+    </tbody>
+  </table>
 
 Request
 
