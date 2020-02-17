@@ -28,6 +28,26 @@ Technologies used;
 
 ### Installation
 
-    - 
+- Clone the repository and go to project directory.
+
+        git clone https://github.com/elevliaykut/articlesapp.git
+
+        cd articlesapp
+
+- Rename .env.example to .env
+
+- Connect to MySQL and create a database.
+
+        mysql -u root -p
+
+        create database 'larticles'
+
+- Update the .env file with database connection details.
+
+        DB_DATABASE=larticles
+        DB_USERNAME=username
+        DB_PASSWORD=password
+
+- After setting the environment, run the build.sh
 
 <hr></hr>
