@@ -28,6 +28,6 @@
     "dependencies": {
         "vue-input-tag": "^2.0.6",
         "vue-router": "^3.1.5",
-        "vuetify": "^2.2.12"
+        "vuetify": "^2.6.10"
     }
 }
